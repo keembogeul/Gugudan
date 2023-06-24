@@ -11,7 +11,7 @@ const GuGuDan = () => {
   const onSubmitForm = (e) => {
     e.preventDefault();
     if (parseInt(value) === first * second) {
-      setResult('정답');
+      setResult('정답: ' + value);
       setFirst(Math.ceil(Math.random() * 9));
       setSecond(Math.ceil(Math.random() * 9));
       setValue('');

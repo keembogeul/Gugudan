@@ -1,5 +1,4 @@
 const path = require('path');
-const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   name: 'wordrelay',
@@ -28,14 +27,14 @@ module.exports = {
         ],
         plugins: [
           '@babel/plugin-proposal-class-properties',
-          'react-refresh/babel',
+          // 'react-refresh/babel',
         ],
       },
     }],
   },
-  plugins: [
-    new RefreshWebpackPlugin()
-  ],
+  // plugins: [
+  //   new RefreshWebpackPlugin()
+  // ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
